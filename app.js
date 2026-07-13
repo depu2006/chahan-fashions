@@ -170,8 +170,8 @@ function renderProducts(filter = 'all') {
     card.innerHTML = `
       <div class="card-img-wrap">
         <img src="${p.img}" alt="${p.name}" loading="lazy" />
-        <div class="card-overlay"><span>View Details</span></div>
-        <span class="card-badge ${p.badge}">${p.badgeLabel}</span>
+        <div class="card-overlay"><span>${typeof T!=='undefined'?T[currentLang].view:'View Details'}</span></div>
+        <span class="card-badge ${p.badge}">${typeof T!=='undefined'?T[currentLang]['badge_'+p.tag]:p.badgeLabel}</span>
       </div>
       <div class="card-info">
         <h3 class="card-name">${p.name}</h3>
@@ -253,8 +253,7 @@ function showSlide(idx) {
 dots.forEach(d => d.addEventListener('click', () => showSlide(+d.dataset.idx)));
 setInterval(() => showSlide((testiIdx + 1) % slides.length), 5000);
 
-// ===== LOGO: Copy actual logo if available =====
-// Try to load the user's logo from the same folder
+// ===== LOGO FALLBACK =====
 const logoImg = document.getElementById('logo-img');
 if (logoImg) {
   logoImg.onerror = function() {
@@ -262,3 +261,6 @@ if (logoImg) {
     document.getElementById('logo-text').style.display = 'block';
   };
 }
+
+// ===== APPLY SAVED LANGUAGE =====
+if (typeof applyLang === 'function') applyLang(currentLang);
