@@ -5,7 +5,7 @@ en: {
   hero_title:'<span class="gold-text">Chahan</span><br/>Fashions',
   hero_desc:"Handcrafted sarees that tell stories of tradition, grace & timeless elegance",
   btn_explore:"Explore Collection", btn_wa:"Order on WhatsApp", scroll:"Scroll to explore",
-  stat1:"Sarees in Stock", stat2:"Happy Customers", stat3:"Years of Excellence", stat4:"Fabric Varieties",
+  stat1:"Sarees in Stock", stat2:"Happy Customers", stat3:"Fabric Varieties", stat4:"Fabric Varieties",
   col_label:"Our Curated Range", col_title:'Saree <span class="gold-text">Collection</span>',
   f_all:"All", f_bridal:"Bridal", f_silk:"Silk", f_party:"Party Wear", f_casual:"Casual",
   abt_label:"Our Story", abt_title:'Crafting <span class="gold-text">Elegance</span><br/>Since Decades',
