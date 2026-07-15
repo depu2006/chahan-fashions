@@ -75,19 +75,20 @@ img{max-width:100%;display:block;}
 .tab{padding:.55rem 1.6rem;background:transparent;border:1px solid rgba(201,169,110,.25);color:rgba(232,220,200,.6);font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:50px;transition:all .3s;}
 .tab.active,.tab:hover{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--dark);border-color:transparent;font-weight:600;}
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:2rem;}
-.product-card{background:rgba(255,255,255,.03);border:1px solid rgba(201,169,110,.12);border-radius:12px;overflow:hidden;cursor:pointer;transition:all .4s ease;position:relative;}
-.product-card:hover{transform:translateY(-8px);border-color:rgba(201,169,110,.35);box-shadow:0 20px 50px rgba(0,0,0,.5),0 0 0 1px rgba(201,169,110,.1);}
-.product-card:hover .card-overlay{opacity:1;}
-.card-img-wrap{aspect-ratio:3/4;overflow:hidden;position:relative;}
-.card-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
-.product-card:hover .card-img-wrap img{transform:scale(1.06);}
-.card-overlay{position:absolute;inset:0;background:rgba(13,10,7,.6);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .4s;}
-.card-overlay span{padding:.6rem 1.4rem;border:1px solid var(--gold);color:var(--gold);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;}
-.card-badge{position:absolute;top:.8rem;left:.8rem;padding:.3rem .8rem;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;border-radius:50px;font-weight:600;}
+.product-card{background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(201,169,110,.04));border:1px solid rgba(201,169,110,.16);border-radius:16px;overflow:hidden;cursor:pointer;transition:all .4s ease;position:relative;box-shadow:0 8px 24px rgba(0,0,0,.18);} 
+.product-card:hover{transform:translateY(-8px);border-color:rgba(201,169,110,.38);box-shadow:0 24px 50px rgba(0,0,0,.45),0 0 0 1px rgba(201,169,110,.12);} 
+.product-card:hover .card-overlay{opacity:1;} 
+.card-img-wrap{aspect-ratio:3/4;overflow:hidden;position:relative;background:linear-gradient(135deg,rgba(201,169,110,.12),rgba(13,10,7,.2));} 
+.card-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;} 
+.product-card:hover .card-img-wrap img{transform:scale(1.06);} 
+.card-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,10,7,.72),rgba(13,10,7,.4));display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .4s;} 
+.card-overlay span{padding:.6rem 1.4rem;border:1px solid var(--gold);color:var(--gold);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;} 
+.card-badge{position:absolute;top:.8rem;left:.8rem;padding:.35rem .8rem;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;font-weight:600;backdrop-filter:blur(8px);} 
 .badge-bridal{background:rgba(139,26,26,.8);color:#ffb3b3;border:1px solid rgba(139,26,26,.5);}
 .badge-silk{background:rgba(201,169,110,.15);color:var(--gold);border:1px solid rgba(201,169,110,.3);}
 .badge-party{background:rgba(100,50,150,.6);color:#d4a8ff;border:1px solid rgba(150,80,200,.3);}
 .badge-casual{background:rgba(30,80,50,.6);color:#a8ffc4;border:1px solid rgba(50,140,80,.3);}
+.badge-offer{background:rgba(139,26,26,.8);color:#ffd7a8;border:1px solid rgba(201,169,110,.35);}
 .card-info{padding:1.2rem 1.4rem;}
 .card-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500;color:var(--cream);margin-bottom:.3rem;}
 .card-fabric{font-size:.75rem;letter-spacing:.08em;color:rgba(232,220,200,.5);text-transform:uppercase;margin-bottom:.8rem;}
